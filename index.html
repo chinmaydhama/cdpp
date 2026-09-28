@@ -1,1132 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0B122SKQD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0B122SKQD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z0B122SKQD');
+  </script>
 
-  gtag('config', 'G-Z0B122SKQD');
-</script>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="assets/js/my.js"></script>
-    
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Vaishnavi Patil" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Vaishnavi Patil Website"
-    />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Chinmay Dhamapurkar</title>
+  <meta name="description" content="Chinmay Dhamapurkar: Senior Data Scientist at IQRush.ai. Mechanical engineer turned applied ML, LLM systems and product builder. Talk to his AI twin." />
+  <meta name="author" content="Chinmay Dhamapurkar" />
+  <meta name="theme-color" content="#06080c" />
 
-    <!-- Webpage Logo <link rel="shortcut icon" href="./assets/img/favicon.ico" />-->
-     
-    <title>Chinmay Dhamapurkar</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chinmay Dhamapurkar" />
+  <meta property="og:description" content="Talk to Chinmay's AI twin: a particle hologram that walks you through his story, checks role fit and cites its sources." />
+  <meta property="og:url" content="https://chinmaydhama.github.io/cdpp/" />
+  <meta property="og:image" content="https://chinmaydhama.github.io/cdpp/assets/img/portrait/chinmay-source.png" />
+  <meta name="twitter:card" content="summary" />
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     -->
+  <script>
+    (function () {
+      var d = document.documentElement, skip = false;
+      try { skip = !!sessionStorage.getItem("cd-intro"); } catch (e) {}
+      if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) skip = true;
+      if (!skip) {
+        d.classList.add("is-loading");
+        setTimeout(function () { d.classList.remove("is-loading"); }, 5000);
+      }
+    })();
+  </script>
 
-  </head>
-  <style>
+  <link rel="icon" href="./assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-    
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-    
-    .row {
-      margin: 8px -16px;
-    }
-    
-    /* Add padding BETWEEN each column (if you want) */
-    .row,
-    .row > .column {
-      padding: 8px;
-    }
-        
-    /* Clear floats after rows */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-        /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 30%;
-  display: none; /* Hide columns by default */
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: blue;
-  outline: none;
-  padding: 12px 16px;
-  background-color: ghostwhite;
-  cursor: pointer;
-}
-
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #666;
-}
-
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
-}
-    </style>
-
-      
-    
-
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Chinmay Dhamapurkar</span>
-          <span class="site-description">Bridging the Gap Between Data and Product
-
- </span>
-        </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/chinmay-dhamapurkar-b9a712155/">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a aria-label="https://github.com/chinmaydhama">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Résumé" target="_blank" href="https://drive.google.com/file/d/1wLrzhoIugxGx7Su0iX0xDXsr2o21ejp7/view?usp=sharing">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:chinmaydhamapurkar25@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
-          <a class="link" href="#timeline" data-scroll>My Journey</a>
-        </div>
-      </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-    </div>
-    
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>About Me</h1>
-        <picture>
-           <source 
-            type="image/webp"
-            srcset="./assets/img/webp/profile_pic.webp"
-            alt="Professional Me"
-            width="25%"
-            style="border-radius: 55%"
-          /> 
-          <img
-            src="C:\Users\Vaishnavi\Desktop\Portfolio\Vaishnavi_Portfolio\assets\img\jpg\My_photo.png"
-            alt="Professional Me"
-            width="25%"
-            style="border-radius: 55%"
-          />
-        </picture>
-        <p>
-
-I’m Chinmay Dhamapurkar, an MS in Data Science from George Washington University and an engineer from IIT Dharwad. As a data scientist with a focus on GenAI and product management, I’ve built and managed impactful AI products at TemporAI, applying my expertise in AI, machine learning, and data analytics. My experience spans developing advanced models, optimizing processes, and enhancing user experiences in AI and crypto projects. I’m driven by a passion for using data-driven insights to tackle complex challenges and create innovative solutions that push technological boundaries, as showcased in my portfolio.
-        </p>
-      </div>
-
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i> <br>
-          <i class="devicon-matlab-plain colored"></i>
-          <i class="devicon-r-original colored"></i>
-          <p>My languages skills for programming, machine learning, deep learning and data analysis.</p>
-        </div>
-
-        
-        <!-- Technology Stack #2: Frameworks -->
-        <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
-        <div class="tech">
-          <h2>Frameworks</h2>
-          <i class="devicon-tensorflow-original-wordmark colored"></i>
-          <span class="iconify" data-icon="simple-icons:keras"></span>
-          <span class="iconify" data-icon="logos:pytorch"></span>
-          <span class="iconify" data-icon="logos:opencv"></span>
-
-          <p>My preferred Frameworks for AI/ML, Data Science and Deep learning.</p>
-        </div>
-         <!-- Technology Stack #4: Hardware Skills </i> -->
-        <div class="tech">
-          <h2>Work Management</h2>
-          
-            <i class="devicon-confluence-original-wordmark colored"></i>
-           <br>
-          <i class="devicon-jira-plain-wordmark colored"></i>
-          
-            <i class="devicon-slack-plain colored"></i>
-          
-          <p>In my professional experience i have used mixpanel,slack and Jira.</p>
-        </div>
-
-        <!-- Technology Stack #3: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i> <br>
-        
-         
-          
-          <i class="devicon-jupyter-plain-wordmark colored"></i>
-          
-            
-          
-          <i class=""></i>
-          <p>My go to tools for version control, code editors and Ipython Notebooks.</p>
-        </div>
-
-       
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-
-  <section id="projects">
-    <!-- User Introduction-->
-    <div class="user-details">
-      <h1>My Projects</h1>
-      Checkout my projects and feel free to contact me if you have any feedback!
-      <br> <br>
-      <script>
-        /*filterSelection("all")*/
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("column");
-          if (c == "all") c = "";
-          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-          for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-          }
-        }
-        
-        // Show filtered elements
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-              element.className += " " + arr2[i];
-            }
-          }
-        }
-        
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-        
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-        }
-        </script>
-  
-
-      <div id="myBtnContainer">
-
-      <button class="btn active " onclick="filterSelection('all')"> Show all</button>
-      <button class="btn " onclick="filterSelection('nature')"> Machine & Deep Learning</button>
-      <button class="btn" onclick="filterSelection('cars')"> Natural Language Processing</button>
-      <button class="btn" onclick="filterSelection('people')">Computer Vision</button>
-    </div>
-
-      <!-- Portfolio Gallery Grid -->
-<!-- <div class="row">
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/nifty-daily-28.12.2021.png" alt="Time Series" style="width:100%"> 
-      <h4>Nifty Vision: LSTM-Driven Stock Forecasts</h4>
-      <a href="https://github.com/chinmaydhama/Nifty-Vision-LSTM-Driven-Stock-Forecasts"> <i class="devicon-github-original colored"></i></a>    
-    </div>
-  </div>
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/car.png" alt="CarValueGenius" style="width:100%">
-      <h4>Second Hand Car Price Predictor </h4>
-      <a href="hhttps://github.com/chinmaydhama/car-price-prediction"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-<div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/Couch vs Mongo 2.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>Python Powered Performance Analysis of NoSQL Databases</h4>
-      <a href="https://github.com/chinmaydhama/Performance-Analysis-of-NoSQL-Databases"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-
-<div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/renter-migration-in-2021.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>US Apartment Market: Rental Price Radiance</h4>
-      <a href="https://github.com/bharathgenji/US-Apartment-Market-Insights"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-
-	  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/sypply_chain_analytics-1024x402.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>Supply Stream Insights</h4>
-      <a href="https://github.com/ShikhaAtGitHub/data_mining_project"> <i class="devicon-github-original colored"></i></a>
-    </div>
-		   </div>
-		  
-
-  <div class="column cars" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets\img\jpg\sentiment.png" alt="HeadlineGauge" style="width:100%" style="height:200%">
-      <h4>Market Sentiments Decoder </h4>
-       <a href="https://github.com/chinmaydhama/HeadlineGauge-Decoding-Market-Sentiments"> <i class="devicon-github-original colored"></i></a>
-       
-    </div>
-  </div>
-  <div class="column cars" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets\img\jpg\keyword.png" alt="TextSifter" style="width:95%" style="height:200%">
-      <h4>Advanced Keyword Extraction and Text Summarization</h4>
-      <a href="https://github.com/chinmaydhama/Keyword-Extraction-from-Text"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-
-
-  <div class="column people" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/chest_xray.png" alt="X-ray Net" style="width:100%">
-      <h4>Instant Pneumonia Insight from Chest X-Rays </h4>
-      <a href="https://github.com/chinmaydhama/X-rayNet-Instant-Pneumonia-Insight-from-Chest-X-Rays"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column people" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/plants.png" alt="Crop Guardian" style="width:100%">
-      <h4>Digital Sentinel for Crops Health</h4>
-      <a href="https://github.com/chinmaydhama/CropGuardian-Digital-Sentinel-for-Crops-Health"> <i class="devicon-github-original colored"></i></a>
-    </div>
-	
-  </div>
-  </div>
- -->
-<div class="row">
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/nifty-daily-28.12.2021.png" alt="Time Series" style="width:100%"> 
-      <h4>Nifty Vision: LSTM-Driven Stock Forecasts</h4>
-      <a href="https://github.com/chinmaydhama/Nifty-Vision-LSTM-Driven-Stock-Forecasts"> <i class="devicon-github-original colored"></i></a>    
-    </div>
-  </div>
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/car.png" alt="CarValueGenius" style="width:100%">
-      <h4>Second Hand Car Price Predictor </h4>
-      <a href="https://github.com/chinmaydhama/car-price-prediction"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/Couch vs Mongo 2.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>Python Powered Performance Analysis of NoSQL Databases</h4>
-      <a href="https://github.com/chinmaydhama/Performance-Analysis-of-NoSQL-Databases"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/renter-migration-in-2021.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>US Apartment Market: Rental Price Radiance</h4>
-      <a href="https://github.com/bharathgenji/US-Apartment-Market-Insights"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column nature" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/sypply_chain_analytics-1024x402.jpg" alt="CarValueGenius" style="width:100%">
-      <h4>Supply Stream Insights</h4>
-      <a href="https://github.com/ShikhaAtGitHub/data_mining_project"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column cars" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets\img\jpg\sentiment.png" alt="HeadlineGauge" style="width:100%" style="height:200%">
-      <h4>Market Sentiments Decoder </h4>
-       <a href="https://github.com/chinmaydhama/HeadlineGauge-Decoding-Market-Sentiments"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column cars" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets\img\jpg\keyword.png" alt="TextSifter" style="width:95%" style="height:200%">
-      <h4>Advanced Keyword Extraction and Text Summarization</h4>
-      <a href="https://github.com/chinmaydhama/Keyword-Extraction-from-Text"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column people" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/chest_xray.png" alt="X-ray Net" style="width:100%">
-      <h4>Instant Pneumonia Insight from Chest X-Rays </h4>
-      <a href="https://github.com/chinmaydhama/X-rayNet-Instant-Pneumonia-Insight-from-Chest-X-Rays"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
-  <div class="column people" style="width: 250px; height: 300px;">
-    <div class="content">
-      <img src="assets/img/jpg/plants.png" alt="Crop Guardian" style="width:100%">
-      <h4>Digital Sentinel for Crops Health</h4>
-      <a href="https://github.com/chinmaydhama/CropGuardian-Digital-Sentinel-for-Crops-Health"> <i class="devicon-github-original colored"></i></a>
-    </div>
-  </div>
+<!-- Preloader: shown once per session -->
+<div class="preloader" aria-hidden="true">
+  <div class="pl-count"><span id="pl-num">0</span><sup>%</sup></div>
+  <div class="pl-foot label"><span id="pl-word">Booting Chinmay·AI</span><span>digital twin · v1</span></div>
+  <div class="pl-bar" id="pl-bar"></div>
 </div>
 
-	    
- 
+<!-- Atmosphere -->
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Chinmay Dhamapurkar, back to top">
+      <span class="brand-mark">cd</span>
+      <span class="brand-name">Chinmay Dhamapurkar<small>Senior Data Scientist</small></span>
+    </a>
+    <div class="nav-status" aria-live="polite"><span class="ns-dot" aria-hidden="true"></span><span class="ns-text" id="ns-text">Intro</span></div>
+    <div class="nav-actions">
+      <button type="button" class="pill" id="menu-open" aria-haspopup="dialog" aria-controls="menu">Menu <kbd>⌘K</kbd></button>
+      <a class="pill pill-solid nav-talk magnetic" href="#contact">Let's talk</a>
+    </div>
   </div>
+</header>
 
-  </div>
+<ol class="rail" aria-label="Chapters">
+  <li><a href="#ch1"><span class="r-name">The engineer</span><span>01</span><span class="r-line"></span></a></li>
+  <li><a href="#ch2"><span class="r-name">First models</span><span>02</span><span class="r-line"></span></a></li>
+  <li><a href="#ch3"><span class="r-name">Product</span><span>03</span><span class="r-line"></span></a></li>
+  <li><a href="#ch4"><span class="r-name">Washington, D.C.</span><span>04</span><span class="r-line"></span></a></li>
+  <li><a href="#ch5"><span class="r-name">AI products</span><span>05</span><span class="r-line"></span></a></li>
+  <li><a href="#ch6"><span class="r-name">Now</span><span>06</span><span class="r-line"></span></a></li>
+</ol>
 
-		</div>
-	</section>
+<main id="main">
 
-<style>
-  
- 
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'ESL Legend';
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
-    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
-    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
-    font-style: normal;
-    font-weight: bold;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  .ag-format-container {
-    width: 1160px;
-    margin: 0 auto;
-  
-    position: relative;
-  }
-  
-  .ag-timeline-block {
-    padding: 300px 0;
-  }
-  .ag-timeline_title-box {
-    padding: 0 0 30px;
-  
-    text-align: center;
-  }
-  .ag-timeline_tagline {
-    font-size: 40px;
-    color: rgb(84, 89, 95);
-  }
-  .ag-timeline_title {
-    background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-fill-color: transparent;
-    color: transparent;
-  
-    font-size: 80px;
-  }
-  
-  .ag-timeline_item {
-    margin: 0 0 50px;
-  
-    position: relative;
-  }
-  .ag-timeline_item:nth-child(2n) {
-    text-align: right;
-  }
-  
-  .ag-timeline {
-    display: inline-block;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  
-    position: relative;
-  }
-  .ag-timeline_line {
-    width: 2px;
-    background-color: #393935;
-  
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    bottom: 0;
-  
-    overflow: hidden;
-  
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  
-  .ag-timeline_line-progress {
-    width: 100%;
-    height: 20%;
-    background-color: blue;
-  }
-  
-  .ag-timeline-card_box {
-    padding: 0 0 20px 50%;
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-    padding: 0 50% 20px 0;
-  }
-  .ag-timeline-card_point-box {
-    display: inline-block;
-    margin: 0 14px 0 -28px;
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-    margin: 0 -28px 0 14px;
-  }
-  .ag-timeline-card_point {
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
-    border: 3px solid blue;
-    background-color: #1d1d1b;
-  
-    text-align: center;
-    font-family: 'ESL Legend', sans-serif;
-    font-size: 20px;
-    color: #FFF;
-  
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-  }
-  .js-ag-active .ag-timeline-card_point {
-    color: #1d1d1b;
-    background-color:blue;
-  }
-  .ag-timeline-card_meta-box {
-    display: inline-block;
-  }
-  .ag-timeline-card_meta {
-    margin: 10px 0 0;
-  
-    font-family: 'ESL Legend', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: blue;
-  }
-  .ag-timeline-card_item {
-    display: inline-block;
-    width: 20%;
-    height : 20%;
-    margin: -77px 300px 0 ;
-    background-color: white;
-  
-    opacity: 0;
-  
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-  
-    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-    box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-  
-    -webkit-transition: -webkit-transform .5s, opacity .5s;
-    -moz-transition: -moz-transform .5s, opacity .5s;
-    -o-transition: -o-transform .5s, opacity .5s;
-    transition: transform .5s, opacity .5s;
-  
-    position: relative;
-  }
-  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
-    -webkit-transform: translateX(-200%);
-    -moz-transform: translateX(-200%);
-    -ms-transform: translateX(-200%);
-    -o-transform: translateX(-200%);
-    transform: translateX(-200%);
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-    -webkit-transform: translateX(200%);
-    -moz-transform: translateX(200%);
-    -ms-transform: translateX(200%);
-    -o-transform: translateX(200%);
-    transform: translateX(200%);
-  }
-  .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
-  .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-    opacity: 1;
-  
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .ag-timeline-card_arrow {
-    height: 18px;
-    width: 18px;
-    margin-top: 20px;
-    background-color: white;
-  
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-  
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
-    margin-left: calc(-18px / 2);
-    margin-right: calc(-18px / 2);
-  }
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
-    margin-left: -10px;
-  
-    right: auto;
-    left: 0;
-  }
-  .ag-timeline-card_img {
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 150%;
-    height: 50%
-  
-  }
-  .ag-timeline-card_info {
-    padding: 20px 30px;
-  }
-  .ag-timeline-card_title {
-    display: none;
-    margin: 10px 0 0;
-  
-    font-family: 'ESL Legend', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: blue;
-  }
-  .ag-timeline-card_desc {
-    line-height: 1.45;
-  
-    font-size: 16px;
-    color: black;
-  }
-  
-  
-  @media only screen and (max-width: 979px) {
-    .ag-timeline_line {
-      left: 30px;
-    }
-  
-    .ag-timeline_item:nth-child(2n) {
-      text-align: left;
-    }
-  
-    .ag-timeline-card_box,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-      padding: 0 0 20px;
-    }
-    .ag-timeline-card_meta-box {
-      display: none;
-    }
-    .ag-timeline-card_point-box,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-      margin: 0 0 0 8px;
-    }
-    .ag-timeline-card_point {
-      height: 40px;
-      line-height: 40px;
-      width: 40px;
-    }
-    .ag-timeline-card_item {
-      width: auto;
-      margin: -65px 0 0 75px
-    }
-    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
-    .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-      -webkit-transform: translateX(200%);
-      -moz-transform: translateX(200%);
-      -ms-transform: translateX(200%);
-      -o-transform: translateX(200%);
-      transform: translateX(200%);
-    }
-    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
-      right: auto;
-      left: 0;
-    }
-    .ag-timeline-card_title {
-      display: block;
-    }
-    .ag-timeline-card_arrow {
-      margin-top: 12px;
-    }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .ag-format-container {
-      width: 96%;
-    }
-  
-    .ag-timeline-card_img {
-      height: auto;
-      width: auto;
-    }
-  }
-  
-  @media only screen and (max-width: 639px) {
-    .ag-timeline_title {
-      font-size: 60px;
-    }
-  
-    .ag-timeline-card_info {
-      padding: 10px 15px;
-    }
-    .ag-timeline-card_desc {
-      font-size: 14px;
-    }
-  }
-  
-  @media only screen and (max-width: 479px) {
-  
-  }
-  
-  @media (min-width: 768px) and (max-width: 979px) {
-    .ag-format-container {
-      width: 750px;
-    }
-  
-  }
-  
-  @media (min-width: 980px) and (max-width: 1161px) {
-    .ag-format-container {
-      width: 960px;
-    }
-  
-  }
-</style>
-
-
-  <section id="timeline">
-    
-          <div class="user-details">
-            <h1>My Journey</h1>
-            This is my journey with all my academic and professional experiences with some milestones achieved!
-            <br><br>
-            </div>
-        <section class="ag-section">
-          <div class="ag-format-container">
-            <div class="js-timeline ag-timeline">
-              <div class="js-timeline_line ag-timeline_line">
-                <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
-              </div>
-              <div class="ag-timeline_list">
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Aug-19</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Joined IIT Dharwad</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\iit_main.jpeg" class="ag-timeline-card_img" width="640" height="560" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title"></div>
-                        <div class="ag-timeline-card_desc">
-                          Started pursuing B.Tech in Mechanical Engineering from IIT Dharwad (2019-2023)
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-      
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Joined Career Development Cell, IIT DH</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Aug-20</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\cdcc.png" class="ag-timeline-card_img" width="1500" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title"></div>
-                        <div class="ag-timeline-card_desc">Managed and coordinated HR conclaves at the CDC, ensuring seamless execution and successful event outcomes.</div>
-                         
-                        
-                        
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-      
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Dec 20</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Powertrain Engineer, Ingene Motorsports</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\ingene.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Student Mentor, IIT Dharwad</div>
-                        <div class="ag-timeline-card_desc">
-                          Served as a Powertrain Engineer for Ingene Motorsports at IIT Dharwad, spearheading innovations for the Formula Bharat competition.
-                          
-                                               
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-      
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Business Analyst Intern, OLL</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Jun-21</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\OLL.png" class="ag-timeline-card_img" width="60" height="360" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 10</div>
-                        <div class="ag-timeline-card_desc">
-                          Contributed as a Business Analyst Intern, leveraging data-driven insights to optimize business strategies and outcomes
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-      
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Aug-21</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Coordinator, Rational Eloquence Unit </div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\Req.png" class="ag-timeline-card_img" width="6400px" height="3600px" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Req</div>
-                        <div class="ag-timeline-card_desc">
-                         As a Coordinator at Rational Eloquence Unit, I orchestrated career-focused competitions and facilitated engagements with distinguished speakers 
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-      
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Machine Learning Intern, Ineuron.ai</Machine Learning Intern, Ineuron.ai></div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">May-22</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\ineuron.png" class="ag-timeline-card_img" style="width:50; height:auto;" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 8</div>
-                        <div class="ag-timeline-card_desc">
-                         I led web scraping, analytics, and deployed predictive models for restaurant ratings using Tableau and Power BI.
-
-                     
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Aug-22</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Data Science Intern, Recykal</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\recykall.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 9</div>
-                        <div class="ag-timeline-card_desc">
-                          As a Data Science Intern, I refined multivariate time series models, notably LSTM, to achieve 85% accuracy and used k-means clustering for customer segmentation.
-
-
-
-
-
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Product Management Intern, ElectricPe</Together-21></div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Jan-23</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\epee.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 8</div>
-                        <div class="ag-timeline-card_desc">
-                           At ElectricPe as a Product Management Intern, I experienced the entire product journey, crafting PRDs and aligning cross-functional teams,Also recieved an PPO (Jan 2023-May 2023)
-                     
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">Aug-23</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Joined The George Washington University</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img src="assets\img\jpg\gwu.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 9</div>
-                        <div class="ag-timeline-card_desc">
-                          Currently pursuing MS in Data science
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-		                     
-		                 <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">Nov-23</div>
-              </div>
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Joined as a Data Analyst</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_img-box">
-                  <img src="assets\img\jpg\FPCM.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_desc">
-                    Working as a Data Analyst at UEEE office GWU.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-          
-          <!-- Experience: Product Data Scientist -->
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">May-24</div>
-              </div>
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Product Data Scientist, TemporAI</div>
-              </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_img-box">
-                  <img src="assets\img\jpg\temporai_logo.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="TemporAI logo" />
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_desc">
-                    Developed AI models using LLMs and LangChain, leveraging generative AI technologies. Contributed to the development of Dr. Hiro, a cutting-edge AI product in the blockchain and crypto space.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
+  <!-- Hero: meet the agent -->
+  <section class="hero" id="top" data-scene="face" data-accent="#8fd3f4" data-label="Chinmay·AI" data-layout="right">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="agent-tag"><span class="ns-dot" aria-hidden="true"></span><b>Chinmay·AI</b><span class="label">digital twin · online</span></p>
+        <h1 class="hero-title">Hi, I'm Chinmay's <em>AI twin.</em></h1>
+        <p class="hero-sub">Ask about his work, check if he fits your team, or let me walk you through the story. I answer only from his real experience, and I show my sources.</p>
+        <form class="prompt" id="hero-prompt" autocomplete="off">
+          <label class="prompt-k" for="hero-input">ask</label>
+          <input id="hero-input" type="text" placeholder="Ask me anything about Chinmay…" spellcheck="false" />
+          <button type="submit" class="prompt-send" aria-label="Ask"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+        </form>
+        <div class="chips" aria-label="Suggested questions">
+          <button type="button" class="chip" data-ask="Give me the 30-second version">30-second version</button>
+          <button type="button" class="chip" data-ask="Walk me through the story">Walk me through the story</button>
+          <button type="button" class="chip" data-ask="Is he a fit for my team?">Is he a fit for my team?</button>
+          <button type="button" class="chip" data-ask="What does he do at IQRush?">What does he do now?</button>
+          <button type="button" class="chip" data-ask="Show me the numbers">Show me the numbers</button>
         </div>
+      </div>
+      <div class="hero-foot">
+        <span class="label">Senior Data Scientist · IQRush.ai</span>
+        <span class="label">Mechanical engineer → applied AI</span>
+        <a class="scroll-cue" href="#story"><i aria-hidden="true"></i>Prefer to read? Scroll</a>
       </div>
     </div>
   </section>
-</section>
 
+  <!-- Manifesto -->
+  <section class="manifesto" id="story" data-scene="layers" data-accent="#8fd3f4" data-label="The pattern" data-layout="right">
+    <div class="wrap">
+      <p class="label">The short version</p>
+      <p class="manifesto-text">I never made one clean career switch. I kept adding <em>layers.</em> Engineering taught me systems. Recykal taught me real ML. ElectricPe taught me the model is not the product. Washington handed me messy data at campus scale. Tempora put me inside AI products. At IQRush, every layer runs <em>at once.</em></p>
+    </div>
+  </section>
 
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <footer class="footer">
-      <p>&copy; Chinmay Dhamapukar, 20203</p>
-    </footer>
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <!-- 01 -->
+  <section class="chapter" id="ch1" data-scene="gear" data-accent="#c9d2de" data-label="01 · The engineer" data-layout="right" aria-labelledby="ch1-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">01</span><span class="label">2019 – 2022</span><span class="label">IIT Dharwad</span></p>
+          <h2 class="ch-title split" id="ch1-t">It started with <em>machines.</em></h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">In 2019 I walked into IIT Dharwad to study mechanical engineering. My world was powertrains, tolerances and performance curves. At <strong>InGene Motorsport</strong> I spent a year and a half as a powertrain engineer, where every design change had a physical consequence you could measure. Short stints at <strong>RIYFT</strong> and <strong>OLL</strong> showed me how constraints turn into design decisions.</p>
+          <p class="reveal">I still open every problem with the same four questions:</p>
+          <ol class="questions reveal">
+            <li>What goes in?</li>
+            <li>What happens inside?</li>
+            <li>What can we measure?</li>
+            <li>Where is the bottleneck?</li>
+          </ol>
+          <ul class="cast reveal" aria-label="Where">
+            <li>IIT Dharwad <small>B.Tech · 2019–23</small></li>
+            <li>InGene Motorsport <small>Powertrain · 2021–22</small></li>
+            <li>RIYFT <small>Design trainee · 2021</small></li>
+            <li>OLL <small>Intern · 2021</small></li>
+          </ul>
+          <p class="lesson reveal"><span>What it taught me</span><q>How systems work.</q></p>
+        </div>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">01</span>
+  </section>
+
+  <!-- 02 -->
+  <section class="chapter" id="ch2" data-scene="routes" data-accent="#5ee6a0" data-label="02 · First models" data-layout="right" aria-labelledby="ch2-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">02</span><span class="label">Aug – Dec 2022</span><span class="label">Recykal</span></p>
+          <h2 class="ch-title split" id="ch2-t">Then I pointed <em>models</em> at trucks and trash.</h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">Recykal runs recycling logistics, where the margin lives in routes, fuel and timing. My first real data science job was about moving material more cheaply and knowing what was coming before it arrived.</p>
+          <p class="reveal">As an intern I worked on four problems: forecasting logistics volumes and prices with <strong>LSTMs</strong>, route and fuel optimization, customer segmentation with <strong>K-means</strong>, and <strong>Mask R-CNN</strong> segmentation of waste images. Five months, four different kinds of model, one question behind all of them: what does the operation need to know before it happens?</p>
+          <figure class="viz reveal">
+            <div class="viz-head">
+              <span class="label">Logistics forecast</span>
+              <span class="viz-legend"><span><i style="background:#c3c9d3"></i>Actual</span><span><i style="background:var(--accent)"></i>LSTM forecast</span></span>
+            </div>
+            <svg id="fc-svg" viewBox="0 0 560 220" role="img" aria-label="Illustration of an LSTM forecast tracking actual logistics volume, then extending past today with a widening confidence band"></svg>
+            <figcaption><span>History, today, and a forecast with a widening band</span><b>Illustration, not Recykal data</b></figcaption>
+          </figure>
+          <ul class="cast reveal" aria-label="Methods">
+            <li>LSTM forecasting <small>volumes · prices</small></li>
+            <li>Route &amp; fuel optimization <small>logistics cost</small></li>
+            <li>K-means <small>segmentation</small></li>
+            <li>Mask R-CNN <small>waste images</small></li>
+          </ul>
+          <p class="lesson reveal"><span>What it taught me</span><q>Models can optimize real, physical operations.</q></p>
+        </div>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">02</span>
+  </section>
+
+  <!-- 03 -->
+  <section class="chapter" id="ch3" data-scene="lattice" data-accent="#f2df4b" data-label="03 · Product" data-layout="right" aria-labelledby="ch3-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">03</span><span class="label">Jan – May 2023</span><span class="label">ElectricPe</span></p>
+          <h2 class="ch-title split" id="ch3-t">Where I learned the model is <em>not</em> the product.</h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">At ElectricPe I switched sides of the table. As Associate Product Manager on a B2B platform for EV charging, I wrote PRDs, set acceptance criteria, prioritized with engineers and took features from idea to release. The platform grew toward roughly 30,000 users while I was there. That's the company's number, not mine, but it's the scale my decisions had to work at.</p>
+          <p class="reveal">It changed what I ask before I build anything:</p>
+          <ol class="questions reveal">
+            <li>Who is this for?</li>
+            <li>What decision are they trying to make?</li>
+            <li>What happens when the system is wrong?</li>
+            <li>What does "done" actually mean?</li>
+          </ol>
+          <p class="lesson reveal"><span>What it taught me</span><q>The model is not the product.</q></p>
+        </div>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">03</span>
+  </section>
+
+  <!-- 04: GWU → ABM -->
+  <section class="chapter" id="ch4" data-scene="campus" data-accent="#79a6ff" data-label="04 · Washington, D.C." data-layout="right" aria-labelledby="ch4-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">04</span><span class="label">Aug 2023 – Jul 2025</span><span class="label">GWU → ABM Industries</span></p>
+          <h2 class="ch-title split" id="ch4-t">I came to D.C. for a degree and ended up running data for a <em>campus.</em></h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">In 2023 I moved to Washington for an MS in Data Science at George Washington University, where I earned a <strong>3.9 GPA</strong> and the <strong>Global Leaders Fellowship</strong>. Three months in, I was also working inside GWU Facilities, the team that keeps 45+ buildings running.</p>
+          <p class="reveal">It was a giant, messy, real system: HVAC, electrical, plumbing, thousands of assets, and data split across CMMS, finance, building systems and meters. I connected them, built automated QA checks that flag bad asset and work-order records before they reach anyone's report, and forecast building energy at 30-minute resolution with <strong>25–30% lower error</strong> than the approach the team used before.</p>
+          <p class="reveal">That work is how I got to <strong>ABM Industries</strong>, the facilities operator on the same campus. Same buildings, bigger scope: 5M+ square feet, 1,200+ work orders a month, and pipelines from CMMS, ERP and BMS into automated KPI dashboards.</p>
+          <div class="dc-wrap reveal">
+          <span class="dc-fill" aria-hidden="true"></span>
+          <ol class="dc-line" aria-label="Washington, D.C. timeline">
+            <li><b>Aug 2023</b><span>MS Data Science begins at GWU</span></li>
+            <li><b>Nov 2023</b><span>Joins GWU Facilities as analyst</span></li>
+            <li><b>May 2025</b><span>Graduates, then joins ABM for the summer</span></li>
+            <li><b>Jul 2025</b><span>Same campus, operator scale</span></li>
+          </ol>
+          </div>
+          <ul class="stats reveal">
+            <li><b data-count="45" data-suf="+">45+</b><span>campus buildings in scope</span></li>
+            <li><b data-count="5" data-suf="M+">5M+</b><span>square feet at ABM</span></li>
+            <li><b data-count="1200" data-suf="+">1,200+</b><span>work orders a month at ABM</span></li>
+            <li role="button" tabindex="0" data-ask="How was the 25-30% energy forecast gain measured?"><b>25–30%</b><span>lower forecast error vs. the prior approach</span><i class="how">how measured ↗</i></li>
+          </ul>
+          <p class="lesson reveal"><span>What it taught me</span><q>Real data is messy. Build the system that keeps it honest.</q></p>
+        </div>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">04</span>
+  </section>
+
+  <!-- 05 -->
+  <section class="chapter" id="ch5" data-scene="network" data-accent="#b49bff" data-label="05 · AI products" data-layout="right" aria-labelledby="ch5-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">05</span><span class="label">May 2024 – Apr 2025</span><span class="label">Tempora Labs</span></p>
+          <h2 class="ch-title split" id="ch5-t">Meanwhile, I started building <em>AI</em> people actually use.</h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">Alongside the degree and the campus job, I joined Tempora Labs. First came <strong>Sybil</strong>, a forecasting product across 20+ financial series that picks and blends models (SARIMA, XGBoost, BiLSTM) and cut MAE by about 28% compared with the individual models it combined.</p>
+          <p class="reveal">Then LLMs. Retrieval over <strong>10,000+</strong> enterprise documents so answers cite evidence. A <strong>five-agent</strong> system where a router decides who handles each request. Text-to-SQL that turned some recurring two-day analyst requests into two-hour ones.</p>
+          <figure class="viz reveal">
+            <div class="viz-head"><span class="label">Try the router</span><span class="viz-legend">tap a question</span></div>
+            <div class="router-qs" id="router-qs" role="group" aria-label="Example questions"></div>
+            <svg id="rt-svg" viewBox="0 0 560 300" role="img" aria-label="A query flows to a router, which sends it to one of five agents"></svg>
+            <p class="rt-out" id="rt-out" aria-live="polite"></p>
+            <figcaption><span>Simplified illustration of intent routing</span><b>Production accuracy: 78%</b></figcaption>
+          </figure>
+          <ul class="stats reveal">
+            <li role="button" tabindex="0" data-ask="How was the 28% MAE improvement measured?"><b data-count="28" data-pre="−" data-suf="%">−28%</b><span>MAE vs. the individual models, 20+ series</span><i class="how">how measured ↗</i></li>
+            <li role="button" tabindex="0" data-ask="How was the 78% routing accuracy measured?"><b data-count="78" data-suf="%">78%</b><span>intent-routing accuracy in production</span><i class="how">how measured ↗</i></li>
+            <li role="button" tabindex="0" data-ask="How was the text-to-SQL turnaround measured?"><b>2d → 2h</b><span>on recurring analyst requests</span><i class="how">how measured ↗</i></li>
+            <li><b data-count="10" data-suf="k+">10k+</b><span>enterprise documents behind RAG</span></li>
+          </ul>
+          <p class="lesson reveal"><span>What it taught me</span><q>How to turn models and LLMs into products.</q></p>
+        </div>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">05</span>
+  </section>
+
+  <!-- 06 -->
+  <section class="chapter" id="ch6" data-scene="galaxy" data-accent="#ffb547" data-label="06 · Now" data-layout="right" aria-labelledby="ch6-t">
+    <div class="wrap">
+      <div class="ch-grid">
+        <header>
+          <p class="ch-kicker"><span class="ch-num">06</span><span class="label">Aug 2025 → now</span><span class="label">IQRush.ai</span></p>
+          <h2 class="ch-title split" id="ch6-t">Now I measure how <em>AI</em> sees the world.</h2>
+        </header>
+        <div class="ch-body">
+          <p class="reveal">I joined IQRush.ai as <strong>employee #4</strong> and I'm now a Senior Data Scientist. We answer a hard question: why does an AI answer mention one brand, page or source and not another?</p>
+          <p class="reveal">An LLM has no ranking you can read. It retrieves, generates, cites, and changes its mind between runs. So I build the measurement first, then the models, then the product on top, and I own it end to end on Azure. Most of the hard work is the last 10%: making a number stable, meaningful and something a customer can act on.</p>
+          <ul class="stats reveal">
+            <li><b>#4</b><span>employee, joined Aug 2025</span></li>
+            <li role="button" tabindex="0" data-ask="How was the 62% to 12% instability measured?"><b>62→12%</b><span>run-to-run score instability after removing hard cutoffs</span><i class="how">how measured ↗</i></li>
+            <li><b data-count="10" data-pre="~">~10</b><span>client deployments I work on directly</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="now-extra">
+        <div class="loop-wrap reveal">
+          <svg class="loop" id="loop" viewBox="-90 -20 580 440" role="group" aria-label="The loop I work in: customer, product, data, model, engineering, measurement"></svg>
+          <div class="step" aria-live="polite">
+            <p class="label" id="step-k">Step 01 of 06</p>
+            <h3 id="step-title">Customer</h3>
+            <p id="step-body">It usually starts with a sentence like "we're invisible in ChatGPT." I sit in those conversations, working forward-deployed with around 10 clients.</p>
+            <div class="step-dots" id="step-dots"></div>
+          </div>
+        </div>
+
+        <ul class="areas">
+          <li class="area reveal"><span class="label">Ranking</span><h3>Recommendations that act</h3><p>Calibrated classifiers and ranking models over 100+ engineered features, turned into specific changes a marketer can make, with states that behave sensibly across repeated runs.</p></li>
+          <li class="area reveal"><span class="label">Evaluation</span><h3>LLM evaluation</h3><p>Statement extraction, semantic matching and a smooth confidence roll-up in place of hard cutoffs, so scores stay stable enough to trust.</p></li>
+          <li class="area reveal"><span class="label">Retrieval</span><h3>Retrieval emulation</h3><p>Estimating which pages and sections an AI system would surface for a query, with every finding linked back to its evidence.</p></li>
+          <li class="area reveal"><span class="label">Causal</span><h3>Did it actually work?</h3><p>A/B tests, cohorts and difference-in-differences to show whether a content change moved citations, not just correlated with them.</p></li>
+          <li class="area reveal"><span class="label">Product</span><h3>Content Playground</h3><p>An agentic editor that writes, rewrites, gathers evidence and rescores by page, section and statement, with the user in control.</p></li>
+          <li class="area reveal"><span class="label">Graph</span><h3>Co-mention network</h3><p>A graph of which brands and sources appear together inside AI answers: competitive intelligence you can't get from backlinks.</p></li>
+        </ul>
+
+        <p class="lesson reveal"><span>What it's teaching me</span><q>Build the measurement, the model and the product at the same time.</q></p>
+      </div>
+    </div>
+    <span class="ch-ghost" aria-hidden="true">06</span>
+  </section>
+
+  <!-- The pattern: nine layers -->
+  <section class="section" id="layers" data-scene="layers" data-accent="#ffb547" data-label="Nine layers" data-layout="right" aria-labelledby="layers-t">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">The pattern</p>
+        <h2 class="split" id="layers-t">Every chapter is still <em>in here.</em></h2>
+        <p class="reveal">Seven industries: motorsport, recycling, EV charging, university facilities, enterprise AI, facilities operations, AI search. Nine layers, each added by a chapter, all of them still in use.</p>
+      </div>
+      <ol class="layers-list" reversed>
+        <li><a href="#ch6" data-cursor="Ch. 06"><span class="l-i">L9</span><span class="l-name">LLM systems<em class="l-now">now</em></span><span class="l-from">IQRush.ai · 2026</span></a></li>
+        <li><a href="#ch6" data-cursor="Ch. 06"><span class="l-i">L8</span><span class="l-name">Production ML</span><span class="l-from">IQRush.ai · 2025</span></a></li>
+        <li><a href="#ch5" data-cursor="Ch. 05"><span class="l-i">L7</span><span class="l-name">GenAI &amp; agents</span><span class="l-from">Tempora Labs · 2024</span></a></li>
+        <li><a href="#ch5" data-cursor="Ch. 05"><span class="l-i">L6</span><span class="l-name">Forecasting</span><span class="l-from">GWU · Tempora · 2024</span></a></li>
+        <li><a href="#ch4" data-cursor="Ch. 04"><span class="l-i">L5</span><span class="l-name">Operations analytics</span><span class="l-from">GWU → ABM · 2023</span></a></li>
+        <li><a href="#ch3" data-cursor="Ch. 03"><span class="l-i">L4</span><span class="l-name">Product</span><span class="l-from">ElectricPe · 2023</span></a></li>
+        <li><a href="#ch2" data-cursor="Ch. 02"><span class="l-i">L3</span><span class="l-name">Data science</span><span class="l-from">Recykal · 2022</span></a></li>
+        <li><a href="#ch2" data-cursor="Ch. 02"><span class="l-i">L2</span><span class="l-name">Optimization</span><span class="l-from">Recykal · 2022</span></a></li>
+        <li><a href="#ch1" data-cursor="Ch. 01"><span class="l-i">L1</span><span class="l-name">Engineering</span><span class="l-from">IIT Dharwad · 2019</span></a></li>
+      </ol>
+    </div>
+    <div class="marquee" aria-label="Toolkit">
+      <div class="marquee-row">
+        <span>Ranking</span><span>Recommendations</span><span>LLM evaluation</span><span>RAG</span><span>LangGraph</span><span>MCP</span><span>QLoRA · PEFT</span><span>Text-to-SQL</span><span>Causal inference</span><span>Difference-in-differences</span><span>Multi-agent routing</span>
+      </div>
+      <div class="marquee-row alt">
+        <span>Python</span><span>SQL</span><span>Azure</span><span>XGBoost</span><span>SARIMA</span><span>Holt-Winters</span><span>LSTM</span><span>PyTorch</span><span>TensorFlow</span><span>Mask R-CNN</span><span>Streamlit</span><span>PRDs</span><span>A/B testing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects" data-scene="sphere" data-accent="#ffb547" data-label="Side projects" data-layout="dim" aria-labelledby="projects-t">
+    <div class="wrap p-head">
+      <div class="section-head">
+        <p class="label">Side projects · GitHub</p>
+        <h2 class="split" id="projects-t">Things I built <em>to learn.</em></h2>
+      </div>
+      <span class="label p-hint"><i aria-hidden="true"></i>Scroll to browse</span>
+    </div>
+    <div class="p-scroller">
+      <ul class="p-track">
+        <li class="p-card" style="--c:#8fd3f4"><a href="https://github.com/chinmaydhama/X-rayNet-Instant-Pneumonia-Insight-from-Chest-X-Rays" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">01</span></div><div class="p-body"><h3>X-rayNet</h3><p>Instant pneumonia detection from chest X-rays with a convolutional classifier.</p></div><div class="p-foot"><span>Computer vision</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#5ee6a0"><a href="https://github.com/chinmaydhama/CropGuardian-Digital-Sentinel-for-Crops-Health" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">02</span></div><div class="p-body"><h3>CropGuardian</h3><p>A digital sentinel for crop health that spots plant disease from leaf images.</p></div><div class="p-foot"><span>Computer vision</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#ffb547"><a href="https://github.com/chinmaydhama/Nifty-Vision-LSTM-Driven-Stock-Forecasts" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">03</span></div><div class="p-body"><h3>Nifty Vision</h3><p>LSTM-driven forecasts for the Nifty index from daily market data.</p></div><div class="p-foot"><span>Time series</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#b49bff"><a href="https://github.com/chinmaydhama/HeadlineGauge-Decoding-Market-Sentiments" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">04</span></div><div class="p-body"><h3>HeadlineGauge</h3><p>Decoding market sentiment from financial news headlines.</p></div><div class="p-foot"><span>NLP</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#f2df4b"><a href="https://github.com/chinmaydhama/Keyword-Extraction-from-Text" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">05</span></div><div class="p-body"><h3>Keyword Extraction</h3><p>Keyword extraction and text summarization for long documents.</p></div><div class="p-foot"><span>NLP</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#79a6ff"><a href="https://github.com/chinmaydhama/Performance-Analysis-of-NoSQL-Databases" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">06</span></div><div class="p-body"><h3>NoSQL Performance</h3><p>Benchmarking CouchDB against MongoDB on read, write and query workloads.</p></div><div class="p-foot"><span>Data engineering</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#ff8a65"><a href="https://github.com/chinmaydhama/car-price-prediction" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">07</span></div><div class="p-body"><h3>Car Price Prediction</h3><p>Regression models that price used cars from their listing features.</p></div><div class="p-foot"><span>Machine learning</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#c9d2de"><a href="https://github.com/bharathgenji/US-Apartment-Market-Insights" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">08</span></div><div class="p-body"><h3>US Apartment Market Insights</h3><p>Rental market analysis across US cities. Team project.</p></div><div class="p-foot"><span>Data analysis</span><span class="go">GitHub ↗</span></div></a></li>
+        <li class="p-card" style="--c:#5ee6a0"><a href="https://github.com/ShikhaAtGitHub/data_mining_project" target="_blank" rel="noopener" data-cursor="Open"><div class="p-art"><span class="p-n">09</span></div><div class="p-body"><h3>Supply Stream Insights</h3><p>Data mining on supply chain records to find where operations lose time. Team project.</p></div><div class="p-foot"><span>Data mining</span><span class="go">GitHub ↗</span></div></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" data-scene="face" data-accent="#8fd3f4" data-label="Contact" data-layout="center" aria-labelledby="contact-t">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2 class="split" id="contact-t">Have a messy system? Let's make it <em>measurable.</em></h2>
+      <p class="reveal">Happy to talk about applied ML, LLM evaluation, AI search, or a problem nobody has measured yet.</p>
+      <div class="email-big reveal">
+        <a class="addr" id="email" href="mailto:chinmaydhamapurkar25@gmail.com">chinmaydhamapurkar25@gmail.com</a>
+        <button type="button" class="btn-xl magnetic" id="copy-email" data-cursor="Copy">Copy email</button>
+      </div>
+      <div class="links-row reveal">
+        <a class="pill magnetic" href="https://www.linkedin.com/in/chinmay-dhamapurkar-b9a712155/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="pill magnetic" href="https://github.com/chinmaydhama" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="pill magnetic" href="https://drive.google.com/file/d/1wLrzhoIugxGx7Su0iX0xDXsr2o21ejp7/view?usp=sharing" target="_blank" rel="noopener">Résumé ↗</a>
+        <button type="button" class="pill magnetic" data-ask="Draft an intro email">Ask my twin to draft an intro</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-row label">
+      <span>© 2026 Chinmay Dhamapurkar</span>
+      <span>Engineering → ML → product → AI</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+    <p class="wordmark" aria-hidden="true">Chinmay Dhamapurkar</p>
+  </div>
+</footer>
+
+<!-- HUD around the hologram -->
+<div class="hud" id="hud" aria-hidden="true">
+  <svg class="hud-rings" viewBox="0 0 200 200"><circle class="hr1" cx="100" cy="100" r="98"/><circle class="hr2" cx="100" cy="100" r="90"/><circle class="hr3" cx="100" cy="100" r="82"/></svg>
+  <span class="hud-tag hud-top"><i></i>Chinmay·AI · <b id="hud-state">online</b></span>
+  <span class="hud-tag hud-left">intent router · retrieval · grounded answers</span>
+  <span class="hud-tag hud-right" id="hud-facts">6 chapters indexed</span>
+</div>
+
+<!-- The agent -->
+<aside class="agent" id="agent" aria-label="Chinmay's AI twin">
+  <div class="agent-nudge" id="agent-nudge" hidden>
+    <p id="nudge-text"></p>
+    <div class="nudge-row"><button type="button" class="chip chip-solid" id="nudge-ask">Ask</button><button type="button" class="nudge-x" id="nudge-x" aria-label="Dismiss">Not now</button></div>
+  </div>
+  <button type="button" class="agent-orb" id="agent-orb" aria-expanded="false" aria-controls="agent-panel">
+    <canvas class="face-c" id="orb-face" width="112" height="112" aria-hidden="true"></canvas>
+    <span class="orb-label">Ask my AI twin</span>
+  </button>
+  <section class="agent-panel" id="agent-panel" data-lenis-prevent role="dialog" aria-label="Chat with Chinmay's AI twin" hidden>
+    <header class="ap-head" id="ap-head">
+      <canvas class="face-c" id="head-face" width="88" height="88" aria-hidden="true"></canvas>
+      <div class="ap-id"><b>Chinmay·AI</b><span id="ap-state">online</span></div>
+      <div class="ap-tools">
+        <button type="button" class="ap-btn" id="ap-trace" aria-pressed="true" title="Show how I think">trace</button>
+        <button type="button" class="ap-btn" id="ap-voice" aria-pressed="false" title="Read answers aloud"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path class="v-on" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg><span class="sr">Voice</span></button>
+        <button type="button" class="ap-btn" id="ap-close" aria-label="Minimize"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+      </div>
+    </header>
+    <div class="ap-log" id="ap-log" role="log" aria-live="polite"></div>
+    <div class="ap-chips" id="ap-chips"></div>
+    <form class="ap-form" id="ap-form" autocomplete="off">
+      <button type="button" class="ap-mic" id="ap-mic" aria-label="Speak your question" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+      <input id="ap-input" type="text" placeholder="Ask anything…" spellcheck="false" aria-label="Your question" />
+      <button type="submit" class="ap-send" aria-label="Send"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+    </form>
+    <p class="ap-note">Runs in your browser. Answers come only from Chinmay's story.</p>
+  </section>
+</aside>
+
+<!-- Command menu -->
+<div class="menu" id="menu" data-lenis-prevent role="dialog" aria-modal="true" aria-label="Go to" hidden>
+  <div class="menu-panel">
+    <div class="menu-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <input id="menu-input" type="text" placeholder="Jump to a chapter, ask the agent, or copy my email" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="menu-list" />
+      <kbd>esc</kbd>
+    </div>
+    <div class="menu-list" id="menu-list" role="listbox" aria-label="Destinations"></div>
+    <div class="menu-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>⌘K</kbd> toggle</span></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor" aria-hidden="true"><div class="c-ring"><span id="c-label"></span></div><div class="c-dot"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+<script src="./assets/js/site.js" defer></script>
+<script src="./assets/js/agent.js" defer></script>
+</body>
 </html>
